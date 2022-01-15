@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Transform pickups;
+    [SerializeField] private Transform turnPoints;
     [SerializeField] private GameObject finalUI;
     private CarLocomotion carMover;
     private ScoreTracker scorer;
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
     public void ResetLevel()
     {
         ResetPickups();
+        ResetTurnPoints();
         carMover.ResetPosition();
         carMover.StopAllCoroutines();
         scorer.ResetScore();
@@ -57,6 +59,14 @@ public class GameManager : MonoBehaviour
                 pickup.gameObject.SetActive(true);
                 pickup.gameObject.GetComponent<Pickup>().StopCoroutine("DisableObject");
             }
+        }
+    }
+
+    private void ResetTurnPoints()
+    {
+        foreach (Transform turnPoint in turnPoints)
+        {
+            turnPoint.gameObject.SetActive(true);
         }
     }
 }
