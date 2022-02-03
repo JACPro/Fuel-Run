@@ -24,5 +24,7 @@ ___
 <img src="https://github.com/JACPro/Fuel-Run/blob/main/Assets/Screenshots/Finish.png" title="Level Complete" width="32%"></img> 
 
 ___
+#### To download the apk, [click here](https://github.com/JACPro/Fuel-Run/raw/main/FuelRun.apk)
+
 #### To view a video demonstration, [click here](https://www.youtube.com/watch?v=8BiJZwPxs2s)
 ___
